@@ -28,6 +28,12 @@
 @property (nonatomic, assign) NSUInteger maxTapCount;
 
 /**
+ *  allow tap can have slightly movement while tapping
+ *  default is YES
+ */
+@property (nonatomic, assign) BOOL allowMoving;
+
+/**
  *  touchesBegan for custom taps will filter > maxTapCount taps, default is 2
  *
  *  @param touches touches the recognizer gets
