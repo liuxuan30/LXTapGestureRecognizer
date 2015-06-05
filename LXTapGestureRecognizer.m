@@ -52,7 +52,12 @@
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
-    [super touchesMoved:touches withEvent:event];
+    if (self.allowMoving) {
+        [super touchesMoved:touches withEvent:event];
+    } else {
+        self.state = UIGestureRecognizerStateFailed;
+        return;
+    }
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
