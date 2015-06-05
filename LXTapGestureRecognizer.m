@@ -28,6 +28,7 @@
     self = [super initWithTarget:target action:action];
     if (self) {
         _maxTapCount = 2;
+        _allowMoving = YES;
     }
     return self;
 }
