@@ -6,3 +6,8 @@ For example, if you have two tap gestures, one for single tap and one for double
 By LXTapGestureRecognizer, simply set `maxTapCount` will eliminate addtional taps. Default is 2.
 
 This project is under MIT License.
+
+
+#### 3D Touch on iOS 9 attention:
+
+seems 3D Touch had different implementation, be careful if you enable allowMoving, the gesture won't ended, still under investigation.
